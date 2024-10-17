@@ -24,7 +24,7 @@
                 <label for=""><input type="checkbox">Remember Me </label>
                 <a href="#">Forget Password</a>
             </div>
-            <button onclick="checkpasscode()">Log in</button>
+            <button>Log in</button>
             <div class="register">
                 <p> Don't have an account <a href="#">Register</a></p>
             </div>
@@ -32,25 +32,4 @@
   </section>
     
 </body>
-    <script>
-        function checkpasscode(){
-            const myPasscode = 32123;
-            
-            var passcode = document.getElementById('passcode').value;
-            
-            if(myPasscode == passcode){
-                console.log(passcode)
-                window.location.replace("portfolio.html")
-;
-            }
-            
-            else if(passcode == "" || passcode == null){
-                alert("Please Enter The Passcode");
-            }
-            
-            else if(passcode != myPasscode){
-                alert("You Entered a Wrong Passcode. Please Try Again");
-            }
-        }
-    </script>
 </html>
